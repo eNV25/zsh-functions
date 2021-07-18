@@ -1,0 +1,2 @@
+#!hint/zsh
+"$@" &>/dev/null

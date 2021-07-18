@@ -1,0 +1,5 @@
+#!hint/zsh
+for arg in "$@"
+do
+	echo "$arg"
+done | awk '{ print i++ "\t" $0 }'

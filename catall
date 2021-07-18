@@ -1,0 +1,3 @@
+#!hint/zsh
+for file (*)
+	print "\n$file\n" && cat $file

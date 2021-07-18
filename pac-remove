@@ -1,0 +1,9 @@
+#!hint/zsh
+local opts=() files=()
+for o; do
+	case "$o" in
+		(-*) opts+=("$o") ;;
+		(*) files+=("$o") ;;
+	esac
+done
+repo-remove "${opts[@]}" /home/repo/local-repo.db.tar.gz "${files[@]}"
