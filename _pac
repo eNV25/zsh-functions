@@ -4,7 +4,7 @@ source './.config'
 
 source "${ZSH_SITE_FUNCTIONS:-/usr/share/zsh/site-functions}/_paru"
 
-function _pac {
+function _pac_comp {
 	case "$service" in
 		(pac|paru)
 			_pacman_zsh_comp "$@"
@@ -15,4 +15,4 @@ function _pac {
 	esac
 }
 
-_pac "$@"
+_pac_comp "$@"
