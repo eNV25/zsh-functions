@@ -1,0 +1,2 @@
+#compdef fm
+_gnu_generic "$@"

@@ -1,0 +1,2 @@
+#compdef pac-add
+_gnu_generic "$@"

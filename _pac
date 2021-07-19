@@ -1,0 +1,18 @@
+#compdef pac
+
+source './.config'
+
+source "${ZSH_SITE_FUNCTIONS:-/usr/share/zsh/site-functions}/_paru"
+
+function _pac {
+	case "$service" in
+		(pac|paru)
+			_pacman_zsh_comp "$@"
+			;;
+		(*)
+			_message "Error"
+			;;
+	esac
+}
+
+_pac "$@"

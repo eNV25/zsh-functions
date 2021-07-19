@@ -1,4 +1,4 @@
 #!/usr/bin/zsh
 setopt extendedglob
-for file (*~*.*)
+for file (*~*.zwc)
 	zcompile -- "$file"
