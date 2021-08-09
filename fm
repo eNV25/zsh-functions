@@ -1,5 +1,5 @@
 #!hint/zsh
-ranger --choosedir="$HOME/.cache/ranger/lastdir" "$@" \
-	&& dir="$(<"$HOME/.cache/ranger/lastdir")"    \
-	&& [[ "$PWD" != "$dir" ]]                     \
-	&& cd -- "$dir"
+ranger --choosedir="$HOME/.cache/ranger-lastdir" "$@" \
+	&& lastdir="$(<"$HOME/.cache/ranger-lastdir")"    \
+	&& [[ "$PWD" != "$lastdir" ]]                     \
+	&& cd -- "$lastdir"

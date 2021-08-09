@@ -1,8 +1,6 @@
 #compdef pac
 
-source './.config'
-
-source "${ZSH_SITE_FUNCTIONS:-/usr/share/zsh/site-functions}/_paru"
+source "/usr/share/zsh/site-functions/_paru"
 
 function _pac_comp {
 	case "$service" in

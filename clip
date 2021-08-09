@@ -12,7 +12,10 @@ function clip_fatal {
 }
 
 function clip_usage {
-	clip_fatal "$(basename "$0") copy|paste [--selection <sel>]"
+	clip_fatal "$(basename "$0") copy|paste [OPTIONS]...
+
+options:
+        --selection=SEL      selection"
 }
 
 function clip_determine_command {

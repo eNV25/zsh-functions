@@ -1,2 +1,0 @@
-#compdef pac-remove
-_gnu_generic "$@"

@@ -3,5 +3,5 @@ case "$TERM" in
 	(alacritty*)
 		TERM=xterm-256color /usr/bin/dircolors ;;
 	(*)
-		/usr/bin/dirscolors ;;
+		/usr/bin/dircolors ;;
 esac

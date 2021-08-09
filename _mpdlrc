@@ -1,2 +1,2 @@
-#compdef pac-add
+#compdef mpdlrc
 _gnu_generic "$@"
