@@ -1,5 +1,5 @@
 #!hint/zsh
-local purple="$(tput setaf 35)" bright="$(tput bold)" green="$(tput setaf 32)" reset="$(tput sgr0)"
+local purple="\e[1;35m" bright="\e[0;1m" green="\e[1;32m" reset="$(tput sgr0)"
 printf 'zsh: command not found: %s\n' "$1"
 local entries=(
 	${(f)"$(/usr/bin/pacman -F --machinereadable -- "/usr/bin/$1")"}
